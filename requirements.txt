@@ -1,0 +1,7 @@
+jupyter
+jupyterlab
+pandas
+matplotlib
+ipympl
+lxml
+django-environ

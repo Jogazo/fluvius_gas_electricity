@@ -1,0 +1,7 @@
+[flake8]
+; We use a line length of 120 instead of pep8's default 79
+max-line-length = 120
+max-complexity = 7 
+; Files not checked;
+;  - settings: settings.py
+exclude=.venv*
