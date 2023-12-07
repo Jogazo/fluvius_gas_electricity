@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import os
+import sys
+sys.path.append(os.path.dirname(os.getcwd()))  # noqa
 from calendar import monthrange
 from time import sleep
 from pickle import dump, load
@@ -96,7 +98,7 @@ def download_weather_data_of_day(year, month, day):
 
 if __name__ == '__main__':
     all_weather = dict()
-    for year in [2021, 2022]:
+    for year in [2022, 2023]:
         all_weather[year] = dict()
         for month in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12):
             pickled_month_file_name = f'climate_month_{year}-{month:02}.pickle'
